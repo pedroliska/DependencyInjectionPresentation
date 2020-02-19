@@ -6,7 +6,7 @@ namespace DependencyInjectionPresentation
     {
         static void Main(string[] args)
         {
-            var orderService = new OrderService();
+            var orderService = new OrderService(TODO);
             var customerId = 77;
             orderService.PlaceOrder(customerId);
         }
