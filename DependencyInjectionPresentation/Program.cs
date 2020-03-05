@@ -4,9 +4,11 @@ namespace DependencyInjectionPresentation
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var orderService = new OrderService(TODO);
+            //var notifier = new EmailNotifier();
+            var notifier = new SmsNotifier();
+            var orderService = new OrderService(notifier);
             var customerId = 77;
             orderService.PlaceOrder(customerId);
         }

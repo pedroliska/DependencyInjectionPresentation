@@ -1,3 +1,3 @@
 /.vs
-/DependencyInjectionPresentation/obj
-/DependencyInjectionPresentation/bin
+bin
+obj
