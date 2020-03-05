@@ -9,7 +9,7 @@ namespace Tests
         [TestMethod]
         public void PlaceOrder_NotifiesCustomer()
         {
-            //var orderService = new OrderService(notifier.)
+            //var orderService = new OrderService()
         }
     }
 }

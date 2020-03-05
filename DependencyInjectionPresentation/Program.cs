@@ -10,7 +10,7 @@ namespace DependencyInjectionPresentation
             var notifier = new SmsNotifier();
             var orderService = new OrderService(notifier);
             var customerId = 77;
-            orderService.PlaceOrder(customerId);
+            //orderService.PlaceOrder(customerId);
         }
     }
 }
