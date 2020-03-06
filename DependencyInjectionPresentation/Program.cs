@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DependencyInjectionPresentation
+﻿namespace DependencyInjectionPresentation
 {
     class Program
     {
@@ -8,9 +6,15 @@ namespace DependencyInjectionPresentation
         {
             //var notifier = new EmailNotifier();
             var notifier = new SmsNotifier();
+
             var orderService = new OrderService(notifier);
-            var customerId = 77;
-            //orderService.PlaceOrder(customerId);
+            
+            var order = new Order
+            {
+                CustomerId = 77,
+                //...
+            };
+            orderService.PlaceOrder(order);
         }
     }
 }
